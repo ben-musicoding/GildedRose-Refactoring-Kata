@@ -18,7 +18,6 @@ public class ConjuredGRItem extends GRItem {
         if (item.sellIn < 0 && item.quality > MIN_QUALITY) {
             item.quality = item.quality - 2;
         }
-
         if (item.quality < MIN_QUALITY) {
             item.quality = MIN_QUALITY;
         }

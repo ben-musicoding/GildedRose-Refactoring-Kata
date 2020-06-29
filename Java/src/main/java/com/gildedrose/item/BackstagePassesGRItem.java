@@ -13,7 +13,6 @@ public class BackstagePassesGRItem extends GRItem {
         if (item.quality < MAX_QUALITY) {
             item.quality = item.quality + calculateQualityIncrement();
         }
-
         item.sellIn = item.sellIn - 1;
 
         if (item.sellIn < 0) {

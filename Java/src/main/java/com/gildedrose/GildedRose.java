@@ -14,6 +14,8 @@ class GildedRose {
     }
 
     public void updateQuality() {
-        Arrays.stream(items).map(GRItemFactory::create).forEach(GRItem::updateQuality);
+        Arrays.stream(items)
+                .map(GRItemFactory::create)
+                .forEach(GRItem::updateQuality);
     }
 }
